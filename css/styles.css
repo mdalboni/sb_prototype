@@ -1,0 +1,30 @@
+.navbar-toggler-icon{
+width: 3.5em;
+height: 3.5em;
+}
+
+.navbar-brand{
+    font-size: 3.25rem;
+}
+
+a.nav-link{
+    font-size: 2.25rem!important;
+}
+
+.dropdown-menu .dropdown-item{
+    font-size:2rem;
+    max-width:100%!important;
+}
+
+.bmd-form-group{
+    width:75%;
+}
+
+.navbar-button{
+    font-size:2rem;
+}
+
+.bmd-form-group .form-control,.bmd-form-group input::placeholder{
+    font-size:2rem;    
+    width: 90%;
+}
