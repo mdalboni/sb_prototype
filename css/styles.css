@@ -28,3 +28,22 @@ a.nav-link{
     font-size:2rem;    
     width: 90%;
 }
+
+.navbar-fix{
+    margin: 1rem;
+    margin-left: 0.5321rem;    
+}
+
+.main-panel{
+    margin-right: 2rem;
+    margin-left:2rem;
+    margin-top: 2rem;
+}
+
+.card-fix{
+    margin-bottom:1.5rem;    
+}
+
+.card.col-sm-12.card-fix h5{
+    font-size:3.8rem;
+}
