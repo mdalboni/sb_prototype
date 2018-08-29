@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Title of the document</title>
+    <title>Title of the document</title>    
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+        crossorigin="anonymous">
+
 
     <link
         rel="stylesheet"
@@ -28,8 +34,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand navbar-fix" href="#">Demonstração</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand " href="#">Demonstração</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,41 +67,58 @@
             </form>
         </div>
     </nav>
-    <div>
-        <div class="row main-panel">   
-        <div class="col-sm-12 col-md-6 col-lg-4 card-fix">
+    <div style="padding-top:3.5rem;">
+        <div class="row row-fix main-panel">   
+        <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
             <div class="card">
+                <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
+                        <i class="far fa-bookmark"></i>
+                </div>
                 <img class="card-img-top" src="/img/cartaz-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body">                      
+                    <h5 class="card-title">Evento 1</h5>                    
+                    <h6>20/08/2018</h6>              
+                    <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
+                        proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
+                    <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-fix">
-            <div class="card">
-                <img class="card-img-top" src="/img/cartaz-2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 card-fix">
-            <div class="card">
-                    <img class="card-img-top" src="/img/cartaz-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
+                <div class="card">
+                    <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
+                            <i class="far fa-bookmark"></i>
                     </div>
-                </div>          
+                    <img class="card-img-top" src="/img/cartaz-2.jpg" alt="Card image cap">
+                    <div class="card-body">                      
+                        <h5 class="card-title">Evento 2</h5>                    
+                        <h6>20/08/2018</h6>              
+                        <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
+                            proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
+                        <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
+                    <div class="card">
+                        <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
+                                <i class="far fa-bookmark"></i>
+                        </div>
+                        <img class="card-img-top" src="/img/cartaz-3.jpg" alt="Card image cap">
+                        <div class="card-body">                      
+                            <h5 class="card-title">Evento 3</h5>                    
+                            <h6>30/08/2018</h6>              
+                            <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
+                                proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
+                            <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
     </div>   
-    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>    
+    <script>
+        $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+        $(function () {$('[data-toggle="tooltip"]').tooltip()})
+    </script>    
 </body>
 
 </html>

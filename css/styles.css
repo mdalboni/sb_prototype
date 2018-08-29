@@ -1,49 +1,47 @@
-.navbar-toggler-icon{
-width: 3.5em;
-height: 3.5em;
-}
-
-.navbar-brand{
-    font-size: 3.25rem;
-}
-
-a.nav-link{
-    font-size: 2.25rem!important;
-}
-
-.dropdown-menu .dropdown-item{
-    font-size:2rem;
-    max-width:100%!important;
-}
-
-.bmd-form-group{
-    width:75%;
-}
-
-.navbar-button{
-    font-size:2rem;
-}
-
-.bmd-form-group .form-control,.bmd-form-group input::placeholder{
-    font-size:2rem;    
-    width: 90%;
-}
-
-.navbar-fix{
-    margin: 1rem;
-    margin-left: 0.5321rem;    
-}
-
-.main-panel{
-    margin-right: 2rem;
-    margin-left:2rem;
-    margin-top: 2rem;
+.row-fix{
+    margin:0;
+    margin-top:1rem;
 }
 
 .card-fix{
-    margin-bottom:1.5rem;    
+    margin-bottom:1.5rem;
+}
+.card-fix .card{
+    transition:ease 0.5s;
+}
+.card-fix .card:hover{
+    box-shadow: 0px 0px 20px -1px black;
+    transition:ease 0.5s;
 }
 
-.card.col-sm-12.card-fix h5{
-    font-size:3.8rem;
+.floating-button{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 50%;
+    background: white;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: 2px 2px 12px -3px black;
+    transition: ease 0.5s;
+}
+
+.floating-button:hover{    
+    border-radius: 50%;
+    background: lightgray;    
+    box-shadow: 1px 1px 8px -1px black;
+    transition: ease 0.5s;
+    color:blue;
+}
+
+
+.floating-button i{
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    padding-left: 0.45rem;
+}
+
+h5.card-title{
+    padding-bottom:0;
+    margin-bottom:3px;    
 }
