@@ -34,6 +34,18 @@
     color:blue;
 }
 
+.floating-button.left{
+    right: initial;
+    top: 1rem;
+    left: 1rem;
+}
+
+.floating-button.left span i{
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    padding-left: 0.25rem;
+}
+
 
 .floating-button i{
     font-size: 1.5rem;
@@ -44,4 +56,18 @@
 h5.card-title{
     padding-bottom:0;
     margin-bottom:3px;    
+}
+
+.card-holder{
+    background-color:transparent;
+    padding:1px;
+    transition: 0.5s ease;
+}
+.card-holder:hover{
+    background-color:#c1bdbbf5;
+    padding:1px;
+    transition: 0.5s ease;
+}
+.navbar form .bmd-form-group{
+width: 85%;
 }
