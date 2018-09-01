@@ -8,7 +8,8 @@
         rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
-        crossorigin="anonymous">    
+        crossorigin="anonymous">
+
 
     <link
         rel="stylesheet"
@@ -87,7 +88,10 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body image-zoom" id="img1">                                            
+                <div class="modal-body" id="img1">
+                    <img class="card-img-top image-zoom" 
+                        src="/img/cartaz-1.jpg" 
+                        alt="Card image cap">                    
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                  
@@ -129,42 +133,42 @@
             </div>
         </div>
         <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
-            <div class="card">
-                <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
-                        <i class="far fa-bookmark"></i>
-                </div>
-                <img class="card-img-top" src="/img/cartaz-2.jpg" alt="Card image cap">
-                <div class="card-body">                      
-                    <h5 class="card-title">Evento 2</h5>                    
-                    <h6>20/08/2018</h6>              
-                    <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
-                        proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
-                    <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
-            <div class="card">
-                <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
-                        <i class="far fa-bookmark"></i>
-                </div>
-                <img class="card-img-top" src="/img/cartaz-3.jpg" alt="Card image cap">
-                <div class="card-body">                      
-                    <h5 class="card-title">Evento 3</h5>                    
-                    <h6>30/08/2018</h6>              
-                    <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
-                        proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
-                    <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
+                <div class="card">
+                    <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
+                            <i class="far fa-bookmark"></i>
+                    </div>
+                    <img class="card-img-top" src="/img/cartaz-2.jpg" alt="Card image cap">
+                    <div class="card-body">                      
+                        <h5 class="card-title">Evento 2</h5>                    
+                        <h6>20/08/2018</h6>              
+                        <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
+                            proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
+                        <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>   
-    <script src='https://cdn.rawgit.com/anvaka/panzoom/v6.1.3/dist/panzoom.min.js'></script>
+            <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
+                    <div class="card">
+                        <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
+                                <i class="far fa-bookmark"></i>
+                        </div>
+                        <img class="card-img-top" src="/img/cartaz-3.jpg" alt="Card image cap">
+                        <div class="card-body">                      
+                            <h5 class="card-title">Evento 3</h5>                    
+                            <h6>30/08/2018</h6>              
+                            <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
+                                proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
+                            <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script src='https://cdn.rawgit.com/anvaka/panzoom/v6.1.3/dist/panzoom.min.js'></script>   
     <script>
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
-        $(function () {$('[data-toggle="tooltip"]').tooltip()});     
+        $(function () {$('[data-toggle="tooltip"]').tooltip()})
         var area = document.querySelector('.image-zoom')
-        panzoom(area)  
+        panzoom(area)
     </script>    
 </body>
 
