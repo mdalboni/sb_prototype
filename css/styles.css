@@ -71,3 +71,12 @@ h5.card-title{
 .navbar form .bmd-form-group{
 width: 85%;
 }
+
+.image-zoom{
+    background-image: url(../img/cartaz-1.jpg);
+    background-origin: content-box;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
