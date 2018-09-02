@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Title of the document</title>    
+    <title>[MVP]Portal de Eventos</title>      
     <link 
         rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
@@ -24,104 +24,166 @@
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
         crossorigin="anonymous"></script>
     <script 
-    src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" 
-    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" 
-    crossorigin="anonymous"></script>
+        src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" 
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" 
+        crossorigin="anonymous"></script>
     <script 
-    src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" 
-    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-     crossorigin="anonymous"></script>    
+        src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" 
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>           
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand " href="#">Demonstração</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categorias  
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Empreendedorismo</a>
-                <a class="dropdown-item" href="#">Inovação</a>                
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Administração</a>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Encontre aqui..." aria-label="Search" style="">
-            <button class="btn btn-outline-success my-2 my-sm-0 navbar-button" type="submit" style="border: ">
-                <i class="fas fa-search"></i>
-            </button>
-            </form>
-        </div>
-    </nav>
-    <div style="padding-top:3.5rem;">
-        <div class="row row-fix main-panel">   
-        <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
-            <div class="card-holder">
-                <div class="card">
-                    <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
-                            <i class="far fa-bookmark"></i>
-                    </div>
-                    <img class="card-img-top" src="/img/cartaz-1.jpg" alt="Card image cap">
-                    <div class="card-body">                      
-                        <h5 class="card-title">Evento 1</h5>                    
-                        <h6>20/08/2018</h6>              
-                        <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
-                            proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
-                        <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
-                <div class="card">
-                    <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
-                            <i class="far fa-bookmark"></i>
-                    </div>
-                    <img class="card-img-top" src="/img/cartaz-2.jpg" alt="Card image cap">
-                    <div class="card-body">                      
-                        <h5 class="card-title">Evento 2</h5>                    
-                        <h6>20/08/2018</h6>              
-                        <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
-                            proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
-                        <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-12 col-sm-12 card-fix">
-                    <div class="card">
-                        <div class="floating-button" data-toggle="tooltip" data-placement="left" title="Salvar evento">
-                                <i class="far fa-bookmark"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand " href="index.html"><img src="img/logo.png" height="30" width="30"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias  
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Empreendedorismo</a>
+                        <a class="dropdown-item" href="#">Inovação</a>                
                         </div>
-                        <img class="card-img-top" src="/img/cartaz-3.jpg" alt="Card image cap">
-                        <div class="card-body">                      
-                            <h5 class="card-title">Evento 3</h5>                    
-                            <h6>30/08/2018</h6>              
-                            <p class="card-text">Descrição simples. Lorem ipsum potenti class proin, tempor nec diam, 
-                                proin fermentum curabitur. Nam ultrices vestibulum fermentum conubia adipiscing, aliquam quis dictumst. </p>
-                            <button type="button" class="btn btn-raised btn-primary">Mais detalhes</button>
-                        </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Administração</a>
+                    </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                    <input 
+                        class="form-control mr-sm-2" 
+                        type="search" 
+                        placeholder="Encontre aqui..." 
+                        aria-label="Search" style="">
+                    <button 
+                        class="btn btn-outline-success my-2 my-sm-0 navbar-button" 
+                        type="submit" 
+                        style="border:none;
+                        width:15%;
+                        padding-left: 0.7rem;
+                        border-radius: 50%;">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    </form>
                 </div>
-    </div>   
+            </nav>    
+        <div class="row row-fix main-panel" style="padding-top:3.5rem;">   
+            <div class="col-md-6 col-sm-12" style="padding-bottom:1rem;">
+                <img 
+                    class="card-img-top image-zoom" 
+                    src="/img/cartaz-1.jpg" 
+                    alt="Card image cap">                 
+                </button>
+            </div>
+            <div class="col-md-6 col-sm-12 card">                
+                <div style="display:flex;padding-top: 1rem;">
+                    <button 
+                    type="button" 
+                    class="btn btn-raised btn-secondary">
+                    Favoritar                    
+                    </button>
+                    <div style="width: -webkit-fill-available;"></div>
+                    <button 
+                    type="button" 
+                    class="btn btn-raised btn-primary">
+                    Confirmar presença
+                    </button>
+                </div>
+                <h5>Evento 1</h5>
+                <h6>20/08/2018</h6>
+                <p>Tags:
+                    <span class="badge badge-primary">SEBRAE</span>
+                    <span class="badge badge-secondary">Empreendendorismo</span>
+                    <span class="badge badge-success">Administração</span>
+                    <span class="badge badge-danger">Gratuito</span>                    
+                <p>Pessoas confirmadas: 36/40</p>    
+                
+                <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Introdução
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                    Lorem ipsum ante curae sapien interdum aptent fusce torquent aliquam aptent, 
+                                    ante dictum potenti sed varius massa dapibus aliquam eleifend. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Palestras
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                    Lorem ipsum duis lorem volutpat lacinia felis ullamcorper vivamus, 
+                                    auctor pharetra enim augue leo pretium quam sapien integer, aliquam vulputate est placerat 
+                                    fringilla dapibus massa. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Credenciamento
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                    Lorem ipsum lacus rhoncus suspendisse lorem nam lorem, 
+                                    consectetur ornare faucibus accumsan luctus curabitur facilisis laoreet, 
+                                    torquent lacinia consequat curabitur fringilla aliquet. semper nisi class taciti ultrices, 
+                                    luctus molestie vivamus. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Contato
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div class="card-body">
+                                        Lorem ipsum sem sapien vestibulum in felis fermentum praesent, 
+                                        dolor cursus risus feugiat nullam eu dictum eu bibendum, 
+                                        turpis iaculis mi rhoncus sagittis velit dictumst. 
+                                        mauris praesent netus pellentesque lectus malesuada, vitae a integer est. 
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+            </div>
+        </div>    
     <script>
         $(document).ready(function() { $('body').bootstrapMaterialDesign(); });
-        $(function () {$('[data-toggle="tooltip"]').tooltip()})
+        $(function () {$('[data-toggle="tooltip"]').tooltip()})       
     </script>    
 </body>
 
